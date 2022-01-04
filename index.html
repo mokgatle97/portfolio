@@ -6,57 +6,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lefa's Portfolio</title>
     <link rel = 'stylesheet' type="text/css" href="styles.css">
+    <link rel = 'stylesheet' href ='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css'>
 </head>
 <body>
-    <header>
-        <div class = 'navigation'>
-            <button>About Me</button>
-            <button>Skills</button>
-            <button>Projects</button>
-            <button>Contact Me</button>
-        </div>
-        <div class = 'heading'>
-        <h1>My Name Is Lefa Mokgatle</h1>
-        <h2>The Web Developer You Need</h2>
-        </div>
-        <div class= 'profile-pic'>
-            <center><img src = 'images/propic.jpg' alt="Profile Picture Of Lefa Mokgatle"></center>
-        </div>
-    </header>
 
-    <main>
-        <div class = 'about'>
-            <h3>Hi, my name is Lefa Mokgatle</h3>
+    <header>
+        <a href='#' class='logo'>My Portfolio</a>
+
+        <div class='bx bx-menu' id='menu-icon'></div>
+
+                <ul class = 'navbar'>
+                    <li><a href='#home'>Home</a></li>
+                    <li><a href='#about'>About Me</a></li>
+                    <li><a href='#skills'>Skills</a></li>
+                    <li><a href='#projects'>Projects</a></li>
+                    <li><a href='#contact'>Contact Me</a></li>
+                    <div class='bx bx-moon' id='darkmode'></div>
+                </ul>
+    </header>
+    <section class='home' id='home'>
+        <div class='social'>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href='#'><i class='bx bxl-twitter'></i></a>
+            <a href='#'><i class='bx bxl-instagram'></i></a>
+        </div>
+        <div class ='home-img'>
+            <img src='images/pro-final.png' alt='Profile picture'>
+        </div>
+        <div class='home-text'>
+            <span>Hello, I'm</span>
+            <h1>Lefa Mokgatle</h1>
+            <h2>Javascript Developer</h2>
+            <a href='#contact' class='btn'>Contact Me</a>
+        </div>
+
+        <div class='scroll-down'>
+            <a href='#about'>
+                <i class='bx bx-mouse' ></i>
+                <span>Scroll Down</span>
+                <i class='bx bxs-down-arrow-alt' ></i>
+            </a>
+        </div>        
+    </section>
+
+    <section class='about' id='about'>
+        <div class='heading'>
+            <h2>About Me</h2>
+            <span>Introduction</span>
+        </div>
+        <div class='about-container'>
+            <div class='about-img'>
+                <img src='images/laptop.jpg' alt='Picture of Laptop'>
+            </div>
+            <div class='about-text'>
                 <p>I am 24 years of age and grew up in Johannesburg, South Africa. I graduated from AFDA in 2019 for a Bcom degree in Business Innovation and Technology. The different technologies we were exposed taught me and showed me the real need Africa has programmers and drivers of innovation. Which is how I decided to take the deep dive in learning Javascript and fortunately enough while learning managed to get into the amazin Umuzi programme which will definetly shape me into a great programmer.</p>
+                <div class='information'>
+                    <!-- Box 1 -->
+                    <div class='info-box'>
+                        <i class='bx bxs-user' ></i>
+                        <span>Lefa Mokgatle</span>
+                    </div>
+                    <!-- Box 2 -->
+                    <div class='info-box'>
+                        <i class='bx bxs-phone' ></i>
+                        <span>+27 65 972 0215</span>
+                    </div>
+                    <!-- Box 3 -->
+                    <div class='info-box'>
+                        <i class='bx bxs-envelope' ></i>
+                        <span>mokgatlelefa@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class='skills' id='skills'>
+        <div class='heading'>
+            <h2>Skills</h2>
+            <span>My Skills</span>
         </div>
-        <div class = 'skills'>
-            <h3>Skills</h3>
-                <ul>HTML</ul>
-                <ul>CSS</ul>
-                <ul>Javascript</ul>
-                <ul>Business Leadership</ul>
-                <ul>Microsoft Word</ul>
-                <ul>Microsoft Excel</ul>
-                <ul>Microsoft Powerpoint</ul>
-                <ul>Business Planning</ul>
-                <ul>Social Media Marketing</ul>
-                <ul>Business Development</ul>
+        <!-- Skills content -->
+
+        <div class="skills-container">
+            <div class='bars'>
+                <!-- Box 1 -->
+                <div class='bars-box'>
+                    <h3>HTML</h3>
+                    <span>90%</span>
+                    <div class='light-bar'></div>
+                    <div class='percent-bar html-bar'></div>
+                </div>
+                <!-- Box 2 -->
+                <div class='bars-box'>
+                    <h3>CSS</h3>
+                    <span>75%</span>
+                    <div class='light-bar'></div>
+                    <div class='percent-bar css-bar'></div>
+                </div>
+                <!-- Box 3 -->
+                <div class='bars-box'>
+                    <h3>Javascript</h3>
+                    <span>65%</span>
+                    <div class='light-bar'></div>
+                    <div class='percent-bar js-bar'></div>
+                </div>
+            <div class="skills-img">
+
+            </div>
         </div>
-        <!-- <div class = 'interests'>
-            <h3>Interests</h3>
-        </div> -->
+    </section>
+
+    
         <div class = 'experience'>
             <h3>Previous Experience</h3>
+        </div>
+        <div class = 'job_list'>
+            <div>
             <ul>In-Field Marketing Promoter & Sales</ul>
             <p>Plush Fragrances (March 2016 - Aug 2016)</p>
+            </div>
+
+            <div>
             <ul>Road Manager</ul>
             <p>VTH Legacy (Oct 2016 - Dec 2016)</p>
+            </div>
+
+            <div>
             <ul>Artist Management</ul>
             <p>Mansa Note (Feb 2017 - July 2017)</p>
+            </div>
+
+            <div>
             <ul>Business Administration</ul>
             <p>Lister Medical Building (2014 to May 2018)</p>
+            </div>
+
+            <div>
             <ul>Managing Director Of Mokgatle Enterprises</ul>
             <p>Family owned business (July 2018 to Present)</p>
+            </div>
         </div>
         <div class = 'projects'>
             <h3>Projects</h3>
@@ -73,5 +161,6 @@
 
     <footer>
     </footer>
+    <script src='script.js'></script>
 </body>
 </html>
